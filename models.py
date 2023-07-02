@@ -53,8 +53,8 @@ class User(db.Model, UserMixin):
 class Crag(db.Model):
     id = db.Column(db.String, primary_key = True)
     crag_name = db.Column(db.String(150), nullable = False)
-    latitude = db.Column(db.String(150))
-    longitude = db.Column(db.String(150))
+    latitude = db.Column(db.Number(150))
+    longitude = db.Column(db.Number(150))
     city = db.Column(db.String(150))
     state = db.Column(db.String(150))
     rock_type = db.Column(db.String(150))
